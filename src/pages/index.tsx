@@ -20,7 +20,7 @@ export default function Home() {
         className="rounded-full shadow-lg border-4 border-blue-200 mb-3"
       />
         <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-          Hello, I'm Oumaima Hamzaoui<span className="text-gray-800">👩‍💻</span> 
+          Hello, I am Oumaima Hamzaoui<span className="text-gray-800">👩‍💻</span> 
         </h1>
         <p className="mt-4 text-2xl text-gray-300">
           A passionate <span className="font-bold underline ">Fullstack Javascript Developer</span> crafting beautiful web experiences. 🚀🔥
