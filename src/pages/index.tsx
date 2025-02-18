@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import profilePic from "@/../public/profile.jpg";
+import profilePic from "@/../public/profile.jpeg";
 import Head from 'next/head';
 
 export default function Home() {

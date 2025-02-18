@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin } from "lucide-react"; // Import the necessary icons
+import { Mail, Linkedin } from "lucide-react"; // Import the necessary icons
 
 export default function Contact() {
   return (
@@ -20,10 +20,6 @@ export default function Contact() {
                 <Mail size={20} className="mr-2" />
                 <strong>Email:  &nbsp; </strong> 
                 <a href="mailto:oumaima.hamzaoui.pro@gmail.com" className="text-blue-500 hover:underline">oumaima.hamzaoui.pro@gmail.com</a>
-              </p>
-              <p className="text-gray-400 flex items-center justify-center">
-                <Phone size={20} className="mr-2" />
-                <strong>Phone: &nbsp; </strong> +33745003649
               </p>
               <div className="mt-4 flex items-center justify-center">
                 <Linkedin size={20} className="mr-2" />
