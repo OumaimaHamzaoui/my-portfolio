@@ -18,7 +18,7 @@ export default function Resume() {
         ></iframe>
       </div>
       <Link href={resumePath} download className="mt-6">
-        <button className="flex items-center gap-2 bg-blue-500 hover:cursor-pointer hover:bg-blue-600 px-6 py-3 rounded-lg">
+        <button className="flex items-center gap-2 bg-blue-500  hover:bg-blue-600 px-6 py-3 rounded-lg">
           <Download className="w-5 h-5" />
           Download Resume
         </button>
