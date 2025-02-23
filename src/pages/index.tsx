@@ -23,7 +23,7 @@ export default function Home() {
           Hello, I am Oumaima Hamzaoui<span className="text-gray-800">👩‍💻</span> 
         </h1>
         <p className="mt-4 text-2xl text-gray-300">
-          A passionate <span className="font-bold underline ">Fullstack Javascript Developer</span> crafting beautiful web experiences. 🚀🔥
+          A passionate <span className="font-bold underline ">Web Developer</span> crafting beautiful web experiences. 🚀🔥
         </p>
         <div className="mt-6 space-x-4">
           <Link
