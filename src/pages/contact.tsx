@@ -11,7 +11,7 @@ export default function Contact() {
         <div className="mt-10 space-y-6">
           <div className="text-center">
             <h2 className="text-xl font-semibold text-white">Oumaima Hamzaoui</h2>
-            <p className="text-gray-300">Full Stack JavaScript Developer</p>
+            <p className="text-gray-300">Web Developer</p>
             <div className="mt-4 space-y-4">
               <p className="text-gray-400">
                 Feel free to reach out to me for collaborations or inquiries.
