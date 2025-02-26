@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Download } from "lucide-react";
 
 export default function Resume() {
-  const [language, setLanguage] = useState("fr"); // Default to French
+  const [language, setLanguage] = useState<"fr" | "en">("fr");
 
-  const resumes = {
+  const resumes: { fr: string; en: string } = {
     fr: "/CV-Hamzaoui_Oumaima-French.pdf",
     en: "/CV-Hamzaoui_Oumaima-English.pdf",
   };
@@ -16,7 +16,6 @@ export default function Resume() {
         My Resume
       </h1>
 
-      {/* Tabs for language selection */}
       <div className="flex space-x-4 mb-6">
         <button
           className={`px-4 py-2 rounded-lg ${
@@ -36,7 +35,6 @@ export default function Resume() {
         </button>
       </div>
 
-      {/* Resume Preview */}
       <div className="w-full max-w-5xl border border-gray-700 rounded-lg overflow-hidden shadow-lg">
         <iframe
           src={resumes[language]}
@@ -45,7 +43,6 @@ export default function Resume() {
         ></iframe>
       </div>
 
-      {/* Download Button */}
       <Link href={resumes[language]} download className="mt-6">
         <button className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg">
           <Download className="w-5 h-5" />
