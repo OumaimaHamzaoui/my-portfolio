@@ -106,25 +106,28 @@ const projects = [
         <Head>
           <title>My projects</title>
         </Head>  
-        <div className="min-h-screen px-24 py-16">
-            <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+        <div className="min-h-screen px-6 sm:px-12 lg:px-24 py-12 sm:py-16">
+          <h1 className="text-3xl sm:text-4xl font-bold text-center bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
             My Projects
             </h1>
             <div className="mt-10 space-y-10">
             {projects.map((company, index) => (
-                <div key={index} className="bg-white/10 p-6 rounded-lg backdrop-blur-lg shadow-lg">
+              <div
+                key={index}
+                className="bg-white/10 p-6 rounded-xl backdrop-blur-lg shadow-lg"
+              >
                 <h2 className="text-2xl font-semibold text-blue-400">
                     {company.company} ({company.period})
                 </h2>
                 {company.client && (
-                    <h3 className="text-xl font-semibold text-blue-400">Client: {company.client}</h3>
+                    <h3 className="text-lg font-semibold text-blue-300">Client: {company.client}</h3>
                 )}
                 <div className="mt-4 space-y-6">
                     {company.projects.map((project, idx) => (
                     <div key={idx} className="p-4 border border-gray-700 rounded-lg">
-                        <h3 className="text-xl font-semibold text-white">{project.name}</h3>
+                        <h3 className="text-lg sm:text-xl font-semibold text-white">{project.name}</h3>
                         <p className="text-gray-300">{project.description}</p>
-                        <div className="mt-2 space-y-2">
+                        <div className="mt-3 sm:grid sm:grid-cols-1 sm:grid-cols-2 gap-1">
                         {Object.entries(project.tech).map(([key, value]) => (
                             <p key={key} className="text-sm text-gray-400">
                             <span className="font-bold text-blue-300">{key}:</span> {value}
@@ -132,11 +135,11 @@ const projects = [
                         ))}
                         </div>
                         {project.link ? (
-                        <a href={project.link} target="_blank" className="text-blue-500 hover:underline">
+                        <a href={project.link} target="_blank" className="inline-block mt-5 text-s text-blue-500 hover:underline">
                             View Project
                         </a>
                         ) : (
-                        <span className="text-gray-500 text-sm">🔒 Private Project</span>
+                        <p className="text-gray-500 text-sm mt-5">🔒 Private Project</p>
                         )}
                     </div>
                     ))}

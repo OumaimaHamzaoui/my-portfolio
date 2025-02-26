@@ -29,14 +29,14 @@ const categories = [
 
 export default function TechStack() {
   return (
-    <div className="p-10 max-w-5xl mx-auto">
+    <div className="p-6 sm:p-10 max-w-6xl mx-auto">
       {categories.map((category) => (
-        <div key={category.title} className="mb-6">
-          <h2 className="text-xl font-semibold border-b pb-2 mb-4">{category.title}</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4">
+        <div key={category.title} className="mb-8">
+          <h2 className="text-xl sm:text-2xl font-semibold border-b pb-2 mb-4 text-white">{category.title}</h2>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-6">
             {category.techs.map((tech) => (
-              <div key={tech} className="relative flex flex-col items-center bg-gray-100rounded-lg shadow-md group">
-                <div className="relative w-full h-20 ">
+              <div key={tech} className="relative flex flex-col items-center group">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
                   <Image
                     src={`/logos/${tech.toLowerCase().replace(/\s/g, '-')}.png`}
                     alt={tech}
