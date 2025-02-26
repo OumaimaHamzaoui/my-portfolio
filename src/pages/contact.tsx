@@ -23,7 +23,7 @@ export default function Contact() {
               <span className="text-sm sm:text-base">oumaima.hamzaoui.pro@gmail.com</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/oumaima-hamzaoui"
+              href="https://www.linkedin.com/in/oumaima-hamzaoui-ab2520114/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-blue-500 hover:text-blue-600"
