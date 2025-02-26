@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <div className="h-screen flex justify-center items-center px-6 fade-in">
 
-        <div className="bg-white/10 backdrop-blur-lg p-6 sm:p-10 rounded-2xl shadow-lg text-center max-w-3xl w-full">
+        <div className="bg-gray-800 backdrop-blur-lg p-6 sm:p-10 rounded-2xl shadow-lg text-center max-w-3xl w-full">
           <Image
             src={profilePic}
             alt="oumaima_photo"
