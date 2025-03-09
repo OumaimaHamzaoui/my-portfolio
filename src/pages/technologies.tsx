@@ -40,9 +40,9 @@ export default function TechStack() {
                   <Image
                     src={`/logos/${tech.toLowerCase().replace(/\s/g, '-')}.png`}
                     alt={tech}
-                    layout="fill" 
-                    objectFit="contain"  
-                    className="rounded-lg"
+                    fill
+                    sizes="(max-width: 640px) 50px, (max-width: 1024px) 75px, 100px"
+                    className="rounded-lg object-contain"
                   />
                 </div>
                 <div className="absolute bottom-full mb-2 hidden group-hover:block bg-white text-black text-s px-2 py-1 rounded-lg shadow-md">

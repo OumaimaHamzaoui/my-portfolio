@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -49,12 +49,13 @@ function NavLinks({ closeMenu }: { closeMenu?: () => void }) {
     { href: "/technologies", label: "Technologies" },
     { href: "/contact", label: "Contact" },
   ];
+  const pathname = usePathname()
 
   return links.map(({ href, label }) => (
     <Link
       key={href}
       href={href}
-      className="text-white hover:text-blue-400 transition text-lg"
+      className={`text-${href == pathname? "blue-400 underline":"white"} hover:text-blue-400 transition text-lg`}
       onClick={closeMenu ? () => closeMenu() : undefined}
     >
       {label}
