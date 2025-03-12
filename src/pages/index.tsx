@@ -15,8 +15,8 @@ export default function Home() {
           <Image
             src={profilePic}
             alt="oumaima_photo"
-            width={150}
-            height={150}
+            width={200}
+            height={200}
             className="rounded-full shadow-lg border-4 border-blue-200 mb-3 mx-auto"
           />
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
